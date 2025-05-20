@@ -1,0 +1,120 @@
+:root {
+    --paragraphColor: #555;
+    --defaultBlack: #000;
+    --anchorHover: #808080;
+    --defaultWhite: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+p {
+    color: var(--paragraphColor);
+}
+
+/*TRANSITIONS*/
+a,
+.btn {
+    transition: all 0.3s ease;
+}
+
+/*NAVIGATION*/
+nav,
+.nav-links {
+    display: flex;
+}
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+a {
+    color: var(--defaultBlack);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--anchorHover);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+.logo {
+    font-size: 2rem;
+}
+.logo:hover {
+    cursor: default;
+}
+
+/*HAMBURGER MENU*/
+#hamburger-nav {
+    display: none;
+}
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1.5rem;
+    width: 2rem;
+    cursor: pointer;
+}
+.hamburger-icon span {
+    width: 100%;
+    height: 0.125rem;
+    background-color: var(--defaultBlack);
+    transition: all 0.3s ease-in-out;
+}
+/*-----------*/
+/*APARTADO PARA CAMBIAR EL MENU DE FORMA*/
+/*-----------*/
+.menu-links {
+    position: absolute;
+    top: 100%;
+    margin-top: 2rem;
+    right: 0;
+    background-color: var(--defaultWhite);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.menu-links a {
+    display: block;
+    padding: 0.625rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--defaultBlack);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.menu-links li {
+    list-style: none;
+}
+/*-----------*/
+/*APARTADO 2 PARA CAMBIAR EL MENU DE FORMA*/
+/*-----------*/
+.menu-links.open {
+    max-height: 18.75rem;
+}
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(0.625rem, 0.3125rem);
+}
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(0.625rem, -0.3125rem);
+}
+
+/*SECTIONS*/
