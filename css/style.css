@@ -3,6 +3,7 @@
     --defaultBlack: #000;
     --anchorHover: #808080;
     --defaultWhite: #fff;
+    --buttonsProfile: #353535;
 }
 * {
     margin: 0;
@@ -15,12 +16,6 @@ body {
 }
 p {
     color: var(--paragraphColor);
-}
-
-/*TRANSITIONS*/
-a,
-.btn {
-    transition: all 0.3s ease;
 }
 
 /*NAVIGATION*/
@@ -118,3 +113,92 @@ a:hover {
 }
 
 /*SECTIONS*/
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    min-height: fit-content;
+}
+.section-container {
+    display: flex;
+}
+
+/*PROFILE SECTION*/
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+.section__pic-container {
+    display: flex;
+    height: 25rem;
+    width: 25rem;
+    margin: auto 0;
+}
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+.section__text p {
+    font-weight: 600;
+}
+.section__text__p1 {
+    text-align: center;
+}
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+#social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.icon {
+    height: 2.5rem;
+}
+
+/*TRANSITIONS*/
+a,
+.btn {
+    transition: all 0.3s ease;
+}
+.btn {
+    font-weight: 600;
+    padding: 1rem;
+    width: 9rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn-color-1 {
+    border: var(--defaultWhite) 0.1rem solid;
+    background-color: var(--buttonsProfile);
+    color: var(--defaultWhite);
+}
+.btn-color-1:hover {
+    background: none;
+    border: var(--buttonsProfile) 0.1rem solid;
+    color: var(--buttonsProfile);
+}
+.btn-color-2 {
+    background: none;
+    border: var(--buttonsProfile) 0.1rem solid;
+}
+.btn-color-2:hover {
+    border: var(--defaultWhite) 0.1rem solid;
+    background-color: var(--buttonsProfile);
+    color: var(--defaultWhite);
+}
