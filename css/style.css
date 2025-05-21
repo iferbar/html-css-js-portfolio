@@ -161,8 +161,16 @@ section {
     margin-top: 1rem;
     gap: 1rem;
 }
+a {
+    position: relative;
+}
 .icon {
     height: 2.5rem;
+}
+.icon:hover {
+    filter: invert(100%);
+    background-color: var(--defaultWhite);
+    border-radius: 20%;
 }
 
 /*TRANSITIONS*/
