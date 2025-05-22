@@ -210,3 +210,77 @@ a,
     background-color: var(--buttonsProfile);
     color: var(--defaultWhite);
 }
+
+/*ABOUT SECTION*/
+#about {
+    position: relative;
+}
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+.about-pic {
+    border-radius: 2rem;
+}
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background-color: var(--defaultWhite);
+    border-radius: 2rem;
+    border: 0.1rem solid var(--buttonsProfile);
+    text-align: center;
+}
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+.section__pic-container {
+    height: 25rem;
+    width: 25rem;
+    margin: auto 0;
+}
+/*EXPERIENCE SECTION*/
+#experience {
+    position: relative;
+}
+.experience-sub-title {
+    color: var(--paragraphColor);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+article .icon {
+    cursor: pointer;
+}
