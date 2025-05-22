@@ -4,6 +4,7 @@
     --anchorHover: #808080;
     --defaultWhite: #fff;
     --buttonsProfile: #353535;
+    --blurWhite: #ffffffc1;
 }
 * {
     margin: 0;
@@ -19,6 +20,13 @@ p {
 }
 
 /*NAVIGATION*/
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--blurWhite);
+    z-index: 10;
+    backdrop-filter: blur(0.7rem);
+}
 nav,
 .nav-links {
     display: flex;
@@ -115,10 +123,11 @@ a:hover {
 /*SECTIONS*/
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
+    /*padding-top: 4vh;*/
+    height: 90vh;
     margin: 0 10rem;
-    min-height: fit-content;
+    height: fit-content;
+    padding-top: 10rem;
 }
 .section-container {
     display: flex;
@@ -130,6 +139,7 @@ section {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    padding-top: 0;
 }
 .section__pic-container {
     display: flex;
@@ -166,11 +176,14 @@ a {
 }
 .icon {
     height: 2.5rem;
+    cursor: default;
 }
-.icon:hover {
+
+.social-icon:hover {
     filter: invert(100%);
     background-color: var(--defaultWhite);
     border-radius: 20%;
+    cursor: pointer;
 }
 
 /*TRANSITIONS*/
@@ -253,6 +266,7 @@ a,
     width: 25rem;
     margin: auto 0;
 }
+
 /*EXPERIENCE SECTION*/
 #experience {
     position: relative;
@@ -283,4 +297,69 @@ article {
 }
 article .icon {
     cursor: pointer;
+}
+
+/*PROYECTS SECTION*/
+#proyects {
+    position: relative;
+}
+.color-container {
+    border: 0.1rem solid var(--buttonsProfile);
+    background: var(--defaultWhite);
+}
+.proyect-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+.proyect-title {
+    margin: 1rem;
+    color: var(--defaultBlack);
+}
+.proyect-btn {
+    color: var(--defaultBlack);
+    border: 0.1rem solid var(--buttonsProfile);
+}
+
+/*CONTACT SECTION*/
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: 0.1rem solid var(--buttonsProfile);
+    background-color: var(--defaultWhite);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+.contact-info-container p {
+    font-size: larger;
+}
+.contact-icon {
+    cursor: default;
+    height: 2rem;
+}
+.email-icon {
+    height: 2.5rem;
+}
+
+/*FOOTER SECTION*/
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+footer p {
+    text-align: center;
 }
