@@ -19,7 +19,9 @@ p {
     color: var(--paragraphColor);
 }
 
+/*----------------*/
 /*NAVIGATION*/
+/*----------------*/
 header {
     position: sticky;
     top: 0;
@@ -57,7 +59,9 @@ a:hover {
     cursor: default;
 }
 
+/*----------------*/
 /*HAMBURGER MENU*/
+/*----------------*/
 #hamburger-nav {
     display: none;
 }
@@ -120,10 +124,10 @@ a:hover {
     transform: rotate(-45deg) translate(0.625rem, -0.3125rem);
 }
 
+/*----------------*/
 /*SECTIONS*/
-
+/*----------------*/
 section {
-    /*padding-top: 4vh;*/
     height: 90vh;
     margin: 0 10rem;
     height: fit-content;
@@ -133,7 +137,9 @@ section {
     display: flex;
 }
 
+/*----------------*/
 /*PROFILE SECTION*/
+/*----------------*/
 #profile {
     display: flex;
     justify-content: center;
@@ -186,7 +192,9 @@ a {
     cursor: pointer;
 }
 
-/*TRANSITIONS*/
+/*----------------*/
+/*BUTTONS*/
+/*----------------*/
 a,
 .btn {
     transition: all 0.3s ease;
@@ -224,7 +232,9 @@ a,
     color: var(--defaultWhite);
 }
 
+/*----------------*/
 /*ABOUT SECTION*/
+/*----------------*/
 #about {
     position: relative;
 }
@@ -241,9 +251,7 @@ a,
     justify-content: center;
     flex-direction: column;
 }
-.about-pic {
-    border-radius: 2rem;
-}
+
 .arrow {
     position: absolute;
     right: -5rem;
@@ -261,13 +269,10 @@ a,
     gap: 4rem;
     height: 80%;
 }
-.section__pic-container {
-    height: 25rem;
-    width: 25rem;
-    margin: auto 0;
-}
 
+/*----------------*/
 /*EXPERIENCE SECTION*/
+/*----------------*/
 #experience {
     position: relative;
 }
@@ -296,10 +301,12 @@ article {
     gap: 0.5rem;
 }
 article .icon {
-    cursor: pointer;
+    cursor: default;
 }
 
+/*----------------*/
 /*PROYECTS SECTION*/
+/*----------------*/
 #proyects {
     position: relative;
 }
@@ -321,7 +328,9 @@ article .icon {
     border: 0.1rem solid var(--buttonsProfile);
 }
 
+/*----------------*/
 /*CONTACT SECTION*/
+/*----------------*/
 #contact {
     display: flex;
     justify-content: center;
@@ -355,7 +364,9 @@ article .icon {
     height: 2.5rem;
 }
 
+/*----------------*/
 /*FOOTER SECTION*/
+/*----------------*/
 footer {
     height: 26vh;
     margin: 0 1rem;
