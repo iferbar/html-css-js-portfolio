@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/proyects/calculator/css/calculator-fonts.css">
+    <link rel="stylesheet" href="/proyects/calculator/css/calculator-style.css">
+
+</head>
+
+<body>
+    <main class="calculadora">
+        <div id="calculadora__wrapped" class="calculadora__wrapped">
+            <div class="calculadora__caja-container">
+                <div class="calculadora__caja">
+                    <input type="text" name="pantalla" id="pantalla" oncopy="return false" oncut="return false"
+                        onpaste="return false" />
+                    <div class="controls">
+                        <div class="parents">
+                            <div class="grid-element div1">
+                                <button data-action="borrarUltimo">
+                                    C
+                                </button>
+                            </div>
+                            <div class="grid-element div2">
+                                <button data-action="borrar">
+                                    AC
+                                </button>
+                            </div>
+                            <div class="grid-element div3">
+                                <button id="botonOnOff">
+                                    OFF
+                                </button>
+                            </div>
+                            <div class="grid-element div4">
+                                <button data-action="digito">
+                                    7
+                                </button>
+                            </div>
+                            <div class="grid-element div5">
+                                <button data-action="digito">
+                                    8
+                                </button>
+                            </div>
+                            <div class="grid-element div6">
+                                <button data-action="digito">
+                                    9
+                                </button>
+                            </div>
+                            <div class="grid-element div7">
+                                <button data-action="porcentaje">
+                                    %
+                                </button>
+                            </div>
+                            <div class="grid-element div8">
+                                <button data-action="raizCuadrada">
+                                    √
+                                </button>
+                            </div>
+                            <div class="grid-element div9">
+                                <button data-action="digito">
+                                    4
+                                </button>
+                            </div>
+                            <div class="grid-element div10">
+                                <button data-action="digito">
+                                    5
+                                </button>
+                            </div>
+                            <div class="grid-element div11">
+                                <button data-action="digito">
+                                    6
+                                </button>
+                            </div>
+                            <div class="grid-element div12">
+                                <button class="operador" data-action="operador">
+                                    *
+                                </button>
+                            </div>
+                            <div class="grid-element div13">
+                                <button class="operador" data-action="operador">
+                                    /
+                                </button>
+                            </div>
+                            <div class="grid-element div14">
+                                <button data-action="digito">
+                                    1
+                                </button>
+                            </div>
+                            <div class="grid-element div15">
+                                <button data-action="digito">
+                                    2
+                                </button>
+                            </div>
+                            <div class="grid-element div16">
+                                <button data-action="digito">
+                                    3
+                                </button>
+                            </div>
+                            <div class="grid-element div17">
+                                <button class="operador" data-action="operador">
+                                    +
+                                </button>
+                            </div>
+                            <div class="grid-element div18">
+                                <button data-action="digito">
+                                    0
+                                </button>
+                            </div>
+                            <div class="grid-element div19">
+                                <button data-action="digito">
+                                    .
+                                </button>
+                            </div>
+                            <div class="grid-element div20">
+                                <button data-action="cambiarSigno">
+                                    +/-
+                                </button>
+                            </div>
+                            <div class="grid-element div21">
+                                <button class="operador" data-action="operador">
+                                    -
+                                </button>
+                            </div>
+                            <div class="grid-element div22">
+                                <button data-action="calcular">
+                                    =
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calculadora__historial-container">
+                <div class="calculadora__historial" id="historial">
+                    <div class="puntos">
+                        <h3>Historial:</h3>
+                        <ul id="listaHistorial"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/proyects/calculator/js/script.js"></script>
+</body>
+
+</html>

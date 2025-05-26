@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Digital-7";
+    src: url("/proyects/calculator/fonts/Digital-7.eot");
+    src: url("/proyects/calculator/fonts/Digital-7.eot?#iefix")
+            format("embedded-opentype"),
+        url("/proyects/calculator/fonts/Digital-7.woff2") format("woff2"),
+        url("/proyects/calculator/fonts/Digital-7.woff") format("woff"),
+        url("/proyects/calculator/fonts/Digital-7.ttf") format("truetype"),
+        url("/proyects/calculator/fonts/Digital-7.svg#Digital-7") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Bangers";
+    src: url("/proyects/calculator/fonts/Bangers-Regular.eot");
+    src: url("/proyects/calculator/fonts/Bangers-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("/proyects/calculator/fonts/Bangers-Regular.woff2") format("woff2"),
+        url("/proyects/calculator/fonts/Bangers-Regular.woff") format("woff"),
+        url("/proyects/calculator/fonts/Bangers-Regular.ttf") format("truetype"),
+        url("/proyects/calculator/fonts/Bangers-Regular.svg#Bangers-Regular")
+            format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Kalam";
+    src: url("/proyects/calculator");
+    src: url("/proyects/calculator?#iefix") format("embedded-opentype"),
+        url("/proyects/calculator/fonts/Kalam-Regular.woff2") format("woff2"),
+        url("/proyects/calculator/fonts/Kalam-Regular.woff") format("woff"),
+        url("/proyects/calculator/fonts/Kalam-Regular.ttf") format("truetype"),
+        url("/proyects/calculator/fonts/Kalam-Regular.svg#Kalam-Regular")
+            format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

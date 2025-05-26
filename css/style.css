@@ -49,8 +49,18 @@ a {
 }
 a:hover {
     color: var(--anchorHover);
-    text-decoration: underline;
-    text-underline-offset: 1rem;
+}
+.nav-links li::after {
+    content: "";
+    width: 0%;
+    height: 0.125rem;
+    background-color: var(--anchorHover);
+    display: block;
+    margin: auto;
+    transition: 0.3s ease;
+}
+.nav-links li:hover::after {
+    width: 100%;
 }
 .logo {
     font-size: 2rem;
@@ -153,6 +163,10 @@ section {
     width: 25rem;
     margin: auto 0;
 }
+.section__pic-container img {
+    border-radius: 50%;
+}
+
 .section__text {
     align-self: center;
     text-align: center;
