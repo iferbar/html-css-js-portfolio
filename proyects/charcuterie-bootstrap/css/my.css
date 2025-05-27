@@ -13,29 +13,33 @@
 }
 
 @media (max-width: 1200px) {
-    .timeline>li .timeline-image h4.last-round {
-        font-size: .7rem;
+    .timeline > li .timeline-image h4.last-round {
+        font-size: 0.7rem;
     }
 }
 
 @media (min-width: 1200px) {
-    .timeline>li .timeline-image h4.last-round {
+    .timeline > li .timeline-image h4.last-round {
         font-size: 1rem;
     }
 }
 
 @media (max-width: 768px) {
-    .timeline>li .timeline-image h4.last-round {
-        font-size: .5rem;
+    .timeline > li .timeline-image h4.last-round {
+        font-size: 0.5rem;
     }
 }
-
 
 @media (min-width: 992px) {
     #mainNav.navbar-shrink {
         padding-top: 1rem;
         padding-bottom: 1rem;
         background-color: #212529f0;
+    }
+}
+@media (max-width: 400px) {
+    header.masthead .masthead-heading {
+        font-size: 2.5rem;
     }
 }
 
@@ -64,6 +68,6 @@ section#contact {
     background-position: center center;
     background-size: cover;
 }
-.politicas:hover{
+.politicas:hover {
     color: var(--bs-primary-rgb) !important;
 }
