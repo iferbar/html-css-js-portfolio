@@ -166,7 +166,6 @@ section {
 .section__pic-container img {
     border-radius: 50%;
 }
-
 .section__text {
     align-self: center;
     text-align: center;
@@ -252,7 +251,7 @@ a,
 #about {
     position: relative;
 }
-#about .section-container{
+#about .section-container {
     display: block;
 }
 .about-containers,
@@ -344,7 +343,7 @@ article .icon {
     color: var(--defaultBlack);
     border: 0.1rem solid var(--buttonsProfile);
 }
-#proyects .section__text__p1{
+#proyects .section__text__p1 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
