@@ -1,0 +1,69 @@
+#mainNav .navbar-brand img {
+    height: 4rem;
+}
+
+@media screen and (min-width: 992px) {
+    #mainNav .navbar-brand img {
+        height: 6rem;
+    }
+}
+
+#mainNav.navbar-shrink .navbar-brand img {
+    height: 4.5rem;
+}
+
+@media (max-width: 1200px) {
+    .timeline>li .timeline-image h4.last-round {
+        font-size: .7rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .timeline>li .timeline-image h4.last-round {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline>li .timeline-image h4.last-round {
+        font-size: .5rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+    #mainNav.navbar-shrink {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: #212529f0;
+    }
+}
+
+p.phone {
+    font-size: 2rem;
+}
+
+#services .fa-4x {
+    font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+    #services .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+        padding: 0;
+        margin: 0;
+        background-color: #f05;
+    }
+}
+
+section#contact {
+    background-color: #212529;
+    background-image: url("../assets/img/map-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.politicas:hover{
+    color: var(--bs-primary-rgb) !important;
+}

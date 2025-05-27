@@ -252,6 +252,9 @@ a,
 #about {
     position: relative;
 }
+#about .section-container{
+    display: block;
+}
 .about-containers,
 .about-details-container {
     display: flex;
@@ -265,7 +268,6 @@ a,
     justify-content: center;
     flex-direction: column;
 }
-
 .arrow {
     position: absolute;
     right: -5rem;
