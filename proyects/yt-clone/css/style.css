@@ -20,7 +20,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 a {
     text-decoration: none;
@@ -77,7 +77,8 @@ a {
     align-items: center;
 }
 .header .logo span {
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Oswald', cursive;
+    font-size: 1.25rem;
     padding: 1rem;
 }
 .header .container__logo .logo i {
@@ -97,8 +98,8 @@ a {
     border: 0.0625rem solid var(--borders);
     font-size: 1rem;
     font-family: "Open Sans", sans-serif;
-    border-top-left-radius: 0.3rem;
-    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 .header .container__search-bar .search {
     height: 2.1875rem;
@@ -108,8 +109,8 @@ a {
     background-color: var(--backgroundSearch);
     cursor: pointer;
     padding: 0 1.5625rem;
-    border-top-right-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 .header .container__search-bar .micro {
     height: 2.1875rem;
@@ -213,7 +214,30 @@ a {
 }
 .main .grid-videos .video img {
     width: 100%;
+    border-radius: 1rem;
 }
+.main .grid-videos .info{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.main .grid-videos .info .img-channel{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+.main .grid-videos .info .img-channel img{
+    border-radius: 6.25rem;
+}
+.main .grid-videos .info .info-channel h4{
+    font-size: 0.9rem;
+}
+.main .grid-videos .info .info-channel p{
+    font-size: 0.8rem;
+}
+
+
+
 
 /*---MEDIA QUERYS---*/
 @media screen and (max-width: 75rem) {

@@ -1,8 +1,9 @@
 const container = document.querySelector("#container");
-document.querySelector("#menu-button"),
-    addEventListener("click", () => {
-        container.classList.toggle("active");
-    });
+const menuButton = document.querySelector("#menu-button");
+
+menuButton.addEventListener("click", () => {
+    container.classList.toggle("active");
+});
 
 const comprobarAncho = () => {
     if (window.innerWidth <= 768) {
