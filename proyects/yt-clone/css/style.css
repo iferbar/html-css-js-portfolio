@@ -1,0 +1,282 @@
+:root {
+    --defaultBlack: #000;
+    --logo: #63e6be;
+    --borders: #ccc;
+    --colorSearch: #545454;
+    --hoverSearch: #e7e7e7;
+    --backgroundSearch: #f8f8f8;
+    --hoverBackgroundSearch: #f5f5f5;
+    --iconColor: #828282;
+    --defaultWhite: #fff;
+    --anchorHover: #e5e5e5;
+    --lateralIconColor: #606060;
+    --defaultRed: #f00;
+    --hrLine: #dfdfdf;
+    --mainBack: #f9f9f9;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: var(--defaultBlack);
+}
+.container {
+    width: 100%;
+    min-height: 100dvh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(5.625rem, 5.625rem) auto;
+    grid-template-rows: 3.75rem auto;
+    grid-template-areas:
+        "header header"
+        "menu main";
+    transition: all 0.3s ease;
+}
+.container.active {
+    grid-template-columns: minmax(18.75rem, 20%) auto;
+}
+
+/*---HEADER---*/
+.header {
+    grid-area: header;
+    padding: 0 1.25rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-row-gap: 1.25rem;
+    grid-template-areas: "logo search icons";
+}
+.header .container__logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+.header .container__logo .menu-button {
+    border: none;
+    padding: 0.625rem;
+    background: none;
+    cursor: pointer;
+    font-size: 1.125rem;
+    border-radius: 6.25rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    margin-right: 1.25rem;
+}
+.header .menu-button:hover {
+    background-color: var(--hoverSearch);
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+.header .logo span {
+    font-family: "Bebas Neue", cursive;
+    padding: 1rem;
+}
+.header .container__logo .logo i {
+    color: var(--logo);
+}
+.header .container__search-bar {
+    grid-area: search;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .container__search-bar input {
+    min-width: 60%;
+    padding: 0 0.9375rem;
+    height: 2.1875rem;
+    line-height: 2.1875rem;
+    border: 0.0625rem solid var(--borders);
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+.header .container__search-bar .search {
+    height: 2.1875rem;
+    border: 0.0625rem solid var(--borders);
+    border-left: none;
+    color: var(--colorSearch);
+    background-color: var(--backgroundSearch);
+    cursor: pointer;
+    padding: 0 1.5625rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+.header .container__search-bar .micro {
+    height: 2.1875rem;
+    border: 0.0625rem solid var(--borders);
+    color: var(--colorSearch);
+    background-color: var(--backgroundSearch);
+    cursor: pointer;
+    margin: 0 4rem;
+    padding: 0 0.75rem;
+    border-radius: 50%;
+}
+.header .container__search-bar button:hover {
+    background-color: var(--hoverBackgroundSearch);
+}
+
+.header .container__buttons-header {
+    grid-area: icons;
+    display: flex;
+    align-items: center;
+}
+.header .container__buttons-header button {
+    background: none;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.125rem;
+    padding: 0.4375rem 0.75rem;
+    border-radius: 6.25rem;
+    color: var(--iconColor);
+    margin-right: 1.25rem;
+    cursor: pointer;
+}
+.header .container__buttons-header button:hover {
+    background-color: var(--hoverSearch);
+}
+.header .container__buttons-header .avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+}
+.header .container__buttons-header .avatar img {
+    vertical-align: top;
+    width: 100%;
+    border-radius: 6.25rem;
+}
+
+/*---LATERAL MENU---*/
+.lateral-menu {
+    background-color: var(--defaultWhite);
+    grid-area: menu;
+    overflow: hidden;
+}
+.lateral-menu a {
+    display: block;
+    padding: 0.9375rem 2.1875rem;
+    color: var(--defaultBlack);
+    min-width: 50rem;
+}
+.lateral-menu a:hover {
+    background-color: var(--anchorHover);
+}
+.lateral-menu a.active {
+    background-color: var(--anchorHover);
+    font-weight: bold;
+}
+.lateral-menu .fa-solid,
+.lateral-menu .fa-brands {
+    color: var(--lateralIconColor);
+    margin-right: 2rem;
+    width: 1.5rem;
+    text-align: center;
+}
+.lateral-menu a.active .fa-solid,
+.lateral-menu a.active .fa-brands {
+    color: var(--logo);
+}
+.lateral-menu hr {
+    margin: 1.5rem 0;
+    border: 0.0625rem solid var(--hrLine);
+}
+
+/*---MAIN---*/
+
+.main {
+    background-color: var(--mainBack);
+    grid-area: main;
+    padding: 2.5rem;
+}
+.main .title {
+    margin-bottom: 1.5rem;
+}
+.main .grid-videos {
+    display: grid;
+    grid-row-gap: 2.5rem 1.25rem;
+    gap: 2.5rem 1.25rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+.main .grid-videos .video {
+    width: 100%;
+    display: block;
+}
+.main .grid-videos .video img {
+    width: 100%;
+}
+
+/*---MEDIA QUERYS---*/
+@media screen and (max-width: 75rem) {
+    .header .container__logo .logo span {
+        display: none;
+    }
+    .header .container__search-bar input {
+        min-width: 70%;
+    }
+    .header .container__search-bar .micro {
+        margin: 0 2rem;
+    }
+    .header .container__buttons-header button {
+        margin-right: 0.75rem;
+    }
+    .main .grid-videos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 62rem) {
+    .main .grid-videos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header .container__search-bar .micro {
+        margin: 0 1rem;
+    }
+    .header .container__buttons-header button {
+        margin-right: 0.15rem;
+    }
+    .header .container__logo .menu-button {
+        margin-right: 0.25rem;
+    }
+}
+@media screen and (max-width: 48rem) {
+    .container {
+        grid-template-rows: auto;
+    }
+    .header .container__logo .menu-button {
+        margin-right: 0.5rem;
+    }
+    .header {
+        padding: 1.5rem;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        grid-template-areas:
+            "logo icons"
+            "search search";
+    }
+    .header .container__logo .logo span{
+        display: inline;
+    }
+    .header .container__search-bar input{
+        min-width: auto;
+        width: 100%;
+    }
+    .header .container__search-bar .micro {
+        margin: 0 1rem;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 36rem) {
+    .main .grid-videos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
